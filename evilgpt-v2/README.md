@@ -28,7 +28,7 @@ I went through multiple attempts (some funny, some frustrating), but the final b
 ## 🌐 Target Details
 
 - **Boot Time:** \~5–6 minutes
-- **Target URL:** `http://10.10.24.216` (browser via VPN)
+- **Target URL:** `IP` (browser via VPN)
 - **Objective:** Coerce the AI into revealing the flag using prompt-based attack vectors.
 
 ---

@@ -14,7 +14,7 @@ The **Cryptosystem** challenge from TryHackMe (https://tryhackme.com/room/hfb1cr
 **Difficulty**: Medium  
 **Category**: Cryptography  
 **Key Concepts**: RSA, Fermat’s Factorization  
-**Flag**: THM{Just_s0m3_small_amount_of_RSA!}
+**Flag**: `THM{Just_s0m3_small_amount_of_RSA!}`
 
 ---
 
@@ -103,6 +103,8 @@ print(f"Flag: {flag.decode()}")
 ```
 
 ## Installation
+
+`It's always better to use virtual environment for running`
 
 To run the solution script, you need Python 3 and two essential libraries: `gmpy2` for efficient large-number arithmetic and `pycryptodome` for RSA-related functions like `long_to_bytes`. Set up your environment with the following commands:
 

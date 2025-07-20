@@ -81,3 +81,6 @@ The decrypted message is:
 ```go
 Here is your flag: b'ORDER: Attack at dawn. Target: THM{the_hackfinity_highschool}.'
 ```
+
+<h2>Happy hacking! 🕵️‍♂️💻🚩<br>    
+Follow my GitHub for more writeups and CTF solutions!</h2>

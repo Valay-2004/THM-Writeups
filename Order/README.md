@@ -20,7 +20,7 @@ The Crypto Order room from TryHackMe is an entry-level cryptography puzzle where
 | **Room**       | [ORDER](https://tryhackme.com/room/hfb1order) |
 | **Difficulty** | Easy                                          |
 | **Category**   | Cryptography / XOR / Static Analysis          |
-| **Flag**       | `THM{SNEAKY_XOR_TRICKS}` _(example)_          |
+| **Flag**       | `THM{the_hackfinity_highschool}`        |
 | **Author**     | [Valay-2004](https://github.com/Valay-2004)   |
 | **Date**       | 2025-07-20                                    |
 

@@ -15,14 +15,14 @@ The Crypto Order room from TryHackMe is an entry-level cryptography puzzle where
 
 ## 🧾 Metadata
 
-| Key            | Value                                         |
-| -------------- | --------------------------------------------- |
-| **Room**       | [ORDER](https://tryhackme.com/room/hfb1order) |
-| **Difficulty** | Easy                                          |
-| **Category**   | Cryptography / XOR / Static Analysis          |
-| **Flag**       | `THM{the_hackfinity_highschool}`        |
-| **Author**     | [Valay-2004](https://github.com/Valay-2004)   |
-| **Date**       | 2025-07-20                                    |
+| Key               | Value                                         |
+| ----------------- | --------------------------------------------- |
+| **🧠 Room**       | [ORDER](https://tryhackme.com/room/hfb1order) |
+| **🚀 Difficulty** | Easy                                          |
+| **🗂️ Category**   | Cryptography / XOR / Static Analysis          |
+| **🏁 Flag**       | `THM{the_hackfinity_highschool}`              |
+| **✍️ Author**     | [Valay-2004](https://github.com/Valay-2004)   |
+| **📅 Date**       | 20-07-2025                                    |
 
 ---
 
@@ -68,16 +68,19 @@ for i in range(len(ciphertext)):
     if candidate.isalnum():
         print(candidate)
 ```
+
 > Output revealed: **SNEAKY** is the key. 🕵️‍♂️
 
 **4. Full Decryption**
+
 ```py
 print(f'Here is your flag: {xor(ciphertext, "SNEAKY")}')
 ```
-✅ Done! We get the flag in clean text.   
 
+✅ Done! We get the flag in clean text.
 
 The decrypted message is:
+
 ```go
 Here is your flag: b'ORDER: Attack at dawn. Target: THM{the_hackfinity_highschool}.'
 ```

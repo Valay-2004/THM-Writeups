@@ -11,10 +11,18 @@
 
 The Crypto Order room from TryHackMe is an entry-level cryptography puzzle where participants intercept an encrypted message that always begins with a known header: ORDER:. The ciphertext is protected using a repeating-key XOR cipher, and the task is to decrypt the message and extract the target name, which serves as the flag.
 
-Difficulty: Easy  
-Category: Cryptography  
-Key Concepts: Repeating-Key XOR, Known-Plaintext Attack  
-Flag: `THM{the_hackfinity_highschool}`
+---
+
+## 🧾 Metadata
+
+| Key            | Value                                         |
+| -------------- | --------------------------------------------- |
+| **Room**       | [ORDER](https://tryhackme.com/room/hfb1order) |
+| **Difficulty** | Easy                                          |
+| **Category**   | Cryptography / XOR / Static Analysis          |
+| **Flag**       | `THM{SNEAKY_XOR_TRICKS}` _(example)_          |
+| **Author**     | [Valay-2004](https://github.com/Valay-2004)   |
+| **Date**       | 2025-07-20                                    |
 
 ---
 
@@ -39,6 +47,7 @@ Flag: `THM{the_hackfinity_highschool}`
 - We know the message should begin with `ORDER:` (a known-plaintext attack scenario).
 
 **2. Convert Hex to Bytes**
+
 ```py
 ciphertext_hex = (
 "1c1c01041963730f31352a3a386e24356b3d32392b6f6b0d323c22243f6373"
@@ -47,10 +56,28 @@ ciphertext_hex = (
 ciphertext = bytes.fromhex(ciphertext_hex)
 ```
 
-
-**3. Discover the Key using the Known Header**
+**3. XOR Crib Attack with Known Header**
 
 - XOR each byte of "ORDER:" with the first 6 bytes of the ciphertext to recover the key:
 
+```py
+header_part = b"ORDER:"
+
+for i in range(len(ciphertext)):
+    candidate = xor(ciphertext[i:i+len(header_part)], header_part)
+    if candidate.isalnum():
+        print(candidate)
+```
+> Output revealed: **SNEAKY** is the key. 🕵️‍♂️
+
+**4. Full Decryption**
+```py
+print(f'Here is your flag: {xor(ciphertext, "SNEAKY")}')
+```
+✅ Done! We get the flag in clean text.   
 
 
+The decrypted message is:
+```go
+Here is your flag: b'ORDER: Attack at dawn. Target: THM{the_hackfinity_highschool}.'
+```

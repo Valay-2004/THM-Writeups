@@ -81,7 +81,7 @@ print(f'Here is your flag: {xor(ciphertext, "SNEAKY")}')
 
 The decrypted message is:
 
-```go
+```plaintext
 Here is your flag: b'ORDER: Attack at dawn. Target: THM{the_hackfinity_highschool}.'
 ```
 

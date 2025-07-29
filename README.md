@@ -6,7 +6,11 @@ Welcome to my archive of cybersecurity writeups!
 
 ## 🔍 Contents
 
-- [Evil-GPT v2](./evilgpt-v2/)
-- [cryptosystem](./cryptosystem/)
-- [Order](./Order/)
+### EASY
+- [Evil-GPT v2](./EASY/evilgpt-v2/)
+- [cryptosystem](./EASY/cryptosystem/)
+- [Order](./EASY/Order/)
 - [Don't click here](http://example.com)
+
+### MEDIUM
+- [Hammer](./MEDIUM/Hammer/)

@@ -1,20 +1,7 @@
-# _configightly.yml
 title: "Valay's Writeups"
 description: "Writeups from TryHackMe, CTFs and fun"
-
-# Use a clean, readable theme
 theme: jekyll-theme-cayman
 
-# Optional but helpful for documentation-style sites
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: "highlight"
-# Enable table of contents (if your theme supports it via plugins)
-# plugins:
-#   - jekyll-toc
-
-assets:
-  styles:
-    - "./assets/style.css"
+# This tells Jekyll where to find your custom styles
+sass:
+  style: :compressed

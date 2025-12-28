@@ -1,0 +1,46 @@
+---
+---
+
+/* This imports the original Cayman theme styles first */
+@import "{{ site.theme }}";
+
+/* Now we add your Dark Mode overrides globally */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0d1117 !important;
+    color: #c9d1d9 !important;
+  }
+
+  .main-content {
+    background-color: #0d1117 !important;
+    color: #c9d1d9 !important;
+  }
+
+  .page-header {
+    background-color: #161b22 !important;
+    background-image: linear-gradient(120deg, #161b22, #0d1117) !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #f0f6fc !important;
+  }
+
+  a {
+    color: #58a6ff !important;
+  }
+
+  code {
+    background-color: #21262d !important;
+    color: #e6edf3 !important;
+  }
+
+  .highlight {
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+  }
+}

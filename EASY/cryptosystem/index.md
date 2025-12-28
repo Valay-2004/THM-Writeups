@@ -21,6 +21,7 @@ The **Cryptosystem** challenge from TryHackMe (https://tryhackme.com/room/hfb1cr
 ## Challenge Description
 
 The provided script reveals how the flag was encrypted:
+
 - Two primes, `p` and `q`, are generated. `p` is a 1024-bit prime, and `q` is the next prime after `p` (computed using the `primo` function).
 - The modulus is `n = p * q`.
 - The public exponent is `e = 0x10001` (65537).
@@ -28,6 +29,7 @@ The provided script reveals how the flag was encrypted:
 - The flag is encoded to a number and encrypted: `c = pow(bytes_to_long(FLAG.encode()), e, n)`.
 
 We are given:
+
 - `c`: The ciphertext (a large number).
 - `n`: The modulus (another large number).
 - `e`: 65537.
@@ -41,12 +43,14 @@ The vulnerability lies in the generation of `q` as the next prime after `p`, mak
 The key to solving this challenge is recognizing that `p` and `q` are close primes, which makes RSA vulnerable to Fermat’s Factorization. Here’s the step-by-step process:
 
 1. **Factorize `n` Using Fermat’s Factorization**:
+
    - Since `p` and `q` are close, we can use Fermat’s method, which assumes `n = p * q = (a - b)(a + b) = a^2 - b^2`.
    - Start with `a` as the ceiling of the square root of `n`.
    - Increment `a` until `a^2 - n` is a perfect square, yielding `b^2`. Then, `p = a - b` and `q = a + b`.
    - Verify that `p * q == n`.
 
 2. **Compute the Private Key**:
+
    - Calculate Euler’s totient: `phi = (p-1)*(q-1)`.
    - Compute the private exponent `d` as the modular inverse of `e` modulo `phi`.
 
@@ -61,6 +65,7 @@ The key to solving this challenge is recognizing that `p` and `q` are close prim
 Below is the Python script used to solve the challenge. It implements Fermat’s Factorization to find `p` and `q`, computes the private key, and decrypts the ciphertext.
 
 ### Just Run the script and you will get the flag
+
 ```python
 # Credit to Grok, for guiding the solution approach
 from gmpy2 import isqrt, is_square
@@ -112,17 +117,17 @@ To run the solution script, you need Python 3 and two essential libraries: `gmpy
 # Install Python dependencies
 pip install gmpy2 pycryptodome
 ```
+
 On some systems (e.g., Ubuntu), gmpy2 requires additional system dependencies for its mathematical operations:
+
 ```bash
 # Install GMP library on Ubuntu/Debian
 sudo apt update
 sudo apt install libgmp-dev
 ```
-For other operating systems, such as macOS, install the equivalent GMP library (e.g., via Homebrew: brew install gmp). Refer to the gmpy2 documentation if you encounter installation issues.
 
+For other operating systems, such as macOS, install the equivalent GMP library (e.g., via Homebrew: brew install gmp). Refer to the gmpy2 documentation if you encounter installation issues.
 
 ---
 
-
 <h2>Happy hacking! Follow my GitHub for more writeups and CTF solutions!
-

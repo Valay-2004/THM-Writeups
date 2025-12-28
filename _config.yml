@@ -11,6 +11,9 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: "highlight"
-# Enable table of contents (if your theme supports it via plugins)
-# plugins:
-#   - jekyll-toc
+Enable table of contents (if your theme supports it via plugins)
+plugins:
+  - jekyll-toc
+
+assets:
+  style: ./assets/css/style.scss

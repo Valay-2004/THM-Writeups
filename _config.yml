@@ -1,4 +1,16 @@
-# _config.yml
-theme: jekyll-theme-hacker  # or jekyll-theme-cayman, etc.
+# _configightly.yml
 title: "Valay's Writeups"
-description: "Writeups from TryHackMe, CTFs and 🫡 fun"
+description: "Writeups from TryHackMe, CTFs and fun"
+
+# Use a clean, readable theme
+theme: jekyll-theme-cayman
+
+# Optional but helpful for documentation-style sites
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+# Enable table of contents (if your theme supports it via plugins)
+# plugins:
+#   - jekyll-toc

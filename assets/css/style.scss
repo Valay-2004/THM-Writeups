@@ -35,12 +35,47 @@
   }
 
   code {
-    background-color: #21262d !important;
-    color: #e6edf3 !important;
+    background-color: rgba(110, 118, 129, 0.4) !important;
+    color: #f0f6fc !important;
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+    font-family: monospace;
   }
 
-  .highlight {
+  .highlight,
+  pre {
     background: #161b22 !important;
+    color: #e6edf3 !important; /* Forces text to be light gray/white */
     border: 1px solid #30363d !important;
+    border-radius: 6px;
+    padding: 16px;
+    overflow: auto;
   }
+  .highlight .nt,
+  .highlight .nc,
+  .highlight .nd {
+    color: #79c0ff !important;
+  } /* Tags/Classes */
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2 {
+    color: #a5d6ff !important;
+  } /* Strings */
+  .highlight .m,
+  .highlight .mi,
+  .highlight .mf {
+    color: #d2a8ff !important;
+  } /* Numbers */
+  .highlight .nb,
+  .highlight .nf {
+    color: #d2a8ff !important;
+  } /* Built-ins/Functions */
+  .highlight .nv,
+  .highlight .no {
+    color: #ffa657 !important;
+  } /* Variables */
+  .highlight .k,
+  .highlight .kd {
+    color: #ff7b72 !important;
+  } /* Keywords */
 }

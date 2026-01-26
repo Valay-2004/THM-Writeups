@@ -2,6 +2,13 @@ title: "Valay's Writeups"
 description: "Writeups from TryHackMe, CTFs and fun"
 theme: jekyll-theme-cayman
 
-# This tells Jekyll where to find your custom styles
 sass:
   style: :compressed
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    line_numbers: false

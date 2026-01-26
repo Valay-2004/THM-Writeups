@@ -8,12 +8,13 @@ Welcome to my archive of cybersecurity writeups!
 
 ### EASY
 
-- [Evil-GPT v2](./EASY/evilgpt-v2/)
-- [cryptosystem](./EASY/cryptosystem/)
-- [Order](./EASY/Order/)
-- [catpictures](./EASY/catpictures/)
+- [Evil-GPT v2](https://valay-2004.github.io/THM-Writeups/EASY/evilgpt-v2/)
+- [cryptosystem](https://valay-2004.github.io/THM-Writeups/EASY/cryptosystem/)
+- [Order](https://valay-2004.github.io/THM-Writeups/EASY/Order/)
+- [catpictures](https://valay-2004.github.io/THM-Writeups/EASY/catpictures/)
 - [Don't click here](http://example.com)
 
 ### MEDIUM
 
-- [Hammer](./MEDIUM/Hammer/)
+- [Hammer](https://valay-2004.github.io/THM-Writeups/MEDIUM/Hammer/)
+- [Unstable Twin](https://valay-2004.github.io/THM-Writeups/MEDIUM/Unstable%20Twin/)

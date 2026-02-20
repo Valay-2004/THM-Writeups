@@ -18,7 +18,12 @@
     background: linear-gradient(120deg, #161b22, #0d1117) !important;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #f0f6fc !important;
   }
 
@@ -32,13 +37,15 @@
     color: #f0f6fc !important;
     padding: 0.2em 0.4em;
     border-radius: 6px;
-    font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-family:
+      ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+      monospace;
   }
 
   /* Main code blocks – mimic GitHub dark */
   .highlight,
   .highlight pre {
-    background: #0d1117 !important;           /* or #161b22 for slightly lighter */
+    background: #0d1117 !important; /* or #161b22 for slightly lighter */
     color: #e6edf3 !important;
     border: 1px solid #30363d !important;
     border-radius: 6px;
@@ -49,7 +56,7 @@
 
   /* Kill per-line backgrounds / odd striping */
   .highlight pre code {
-    background: none !important;               /* very important */
+    background: none !important; /* very important */
   }
 
   .highlight .lineno,
@@ -60,21 +67,81 @@
   }
 
   /* Better token colors – GitHub-dark inspired */
-  .highlight .c, .highlight .cm, .highlight .cp, .highlight .c1 { color: #8b949e !important; } /* comments */
-  .highlight .err { color: #f85149 !important; background: transparent !important; }
-  .highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt { color: #ff7b72 !important; } /* keywords */
-  .highlight .o { color: #c9d1d9 !important; }
-  .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #d2a8ff !important; } /* numbers */
-  .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .s1, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr { color: #a5d6ff !important; } /* strings */
-  .highlight .na { color: #79c0ff !important; } /* attributes */
-  .highlight .nb { color: #79c0ff !important; }
-  .highlight .nc { color: #f0883e !important; } /* classes – adjusted a bit */
-  .highlight .no { color: #ffa657 !important; } /* constants */
-  .highlight .nd { color: #d2a8ff !important; }
-  .highlight .nf { color: #d2a8ff !important; } /* functions */
-  .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: #ffa657 !important; } /* variables */
-  .highlight .nt { color: #79c0ff !important; } /* tags */
-  .highlight .w { color: #c9d1d9 !important; }
+  .highlight .c,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .c1 {
+    color: #8b949e !important;
+  } /* comments */
+  .highlight .err {
+    color: #f85149 !important;
+    background: transparent !important;
+  }
+  .highlight .k,
+  .highlight .kc,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt {
+    color: #ff7b72 !important;
+  } /* keywords */
+  .highlight .o {
+    color: #c9d1d9 !important;
+  }
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo,
+  .highlight .il {
+    color: #d2a8ff !important;
+  } /* numbers */
+  .highlight .s,
+  .highlight .sa,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sx,
+  .highlight .sr {
+    color: #a5d6ff !important;
+  } /* strings */
+  .highlight .na {
+    color: #79c0ff !important;
+  } /* attributes */
+  .highlight .nb {
+    color: #79c0ff !important;
+  }
+  .highlight .nc {
+    color: #f0883e !important;
+  } /* classes – adjusted a bit */
+  .highlight .no {
+    color: #ffa657 !important;
+  } /* constants */
+  .highlight .nd {
+    color: #d2a8ff !important;
+  }
+  .highlight .nf {
+    color: #d2a8ff !important;
+  } /* functions */
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi {
+    color: #ffa657 !important;
+  } /* variables */
+  .highlight .nt {
+    color: #79c0ff !important;
+  } /* tags */
+  .highlight .w {
+    color: #c9d1d9 !important;
+  }
 
   /* Line numbers if shown */
   .highlight .lineno {

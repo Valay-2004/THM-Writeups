@@ -51,7 +51,7 @@
     border-radius: 6px;
     padding: 16px;
     margin: 1em 0;
-    overflow: hidden;
+    overflow: auto;
   }
 
   /* Kill per-line backgrounds / odd striping */
@@ -59,94 +59,93 @@
     background: none !important; /* very important */
   }
 
-  /* More precise token overrides – refined GitHub dark 2024/2025 style */
-  .highlight .c {
-    color: #8b949e !important;
-  } /* comments */
-  .highlight .cm {
-    color: #8b949e !important;
+  .highlight .lineno,
+  .highlight .gh,
+  .highlight .gu,
+  .highlight .line {
+    background: none !important;
   }
+
+  /* Better token colors – GitHub-dark inspired */
+  .highlight .c,
+  .highlight .cm,
+  .highlight .cp,
   .highlight .c1 {
     color: #8b949e !important;
+  } /* comments */
+  .highlight .err {
+    color: #f85149 !important;
+    background: transparent !important;
   }
-  .highlight .cp {
-    color: #8b949e !important;
-  }
-
-  .highlight .k {
-    color: #ff7b72 !important;
-  } /* keywords */
-  .highlight .kc {
-    color: #ff7b72 !important;
-  }
-  .highlight .kd {
-    color: #ff7b72 !important;
-  }
-  .highlight .kn {
-    color: #ff7b72 !important;
-  }
-  .highlight .kp {
-    color: #ff7b72 !important;
-  }
-  .highlight .kr {
-    color: #ff7b72 !important;
-  }
+  .highlight .k,
+  .highlight .kc,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
   .highlight .kt {
     color: #ff7b72 !important;
+  } /* keywords */
+  .highlight .o {
+    color: #c9d1d9 !important;
   }
-
-  .highlight .s {
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo,
+  .highlight .il {
+    color: #d2a8ff !important;
+  } /* numbers */
+  .highlight .s,
+  .highlight .sa,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sx,
+  .highlight .sr {
     color: #a5d6ff !important;
   } /* strings */
-  .highlight .sb {
-    color: #a5d6ff !important;
-  }
-  .highlight .sc {
-    color: #a5d6ff !important;
-  }
-  .highlight .s1 {
-    color: #a5d6ff !important;
-  }
-  .highlight .s2 {
-    color: #a5d6ff !important;
-  }
-
   .highlight .na {
     color: #79c0ff !important;
-  } /* attributes / HTML tags */
-  .highlight .nt {
+  } /* attributes */
+  .highlight .nb {
     color: #79c0ff !important;
   }
-
+  .highlight .nc {
+    color: #f0883e !important;
+  } /* classes – adjusted a bit */
   .highlight .no {
     color: #ffa657 !important;
   } /* constants */
-  .highlight .nv {
+  .highlight .nd {
+    color: #d2a8ff !important;
+  }
+  .highlight .nf {
+    color: #d2a8ff !important;
+  } /* functions */
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi {
     color: #ffa657 !important;
   } /* variables */
-
-  .highlight .m {
-    color: #d2a8ff !important;
-  } /* numbers */
-
-  .highlight .err {
-    color: #f85149 !important;
-    background: rgba(248, 81, 73, 0.15) !important;
-  } /* errors */
-
-  /* Bash-specific (common in CTF writeups) */
-  .highlight .nb {
+  .highlight .nt {
     color: #79c0ff !important;
-  } /* builtins like echo, cd */
-  .highlight .nv {
-    color: #ffa657 !important;
-  } /* bash variables */
+  } /* tags */
+  .highlight .w {
+    color: #c9d1d9 !important;
+  }
 
   /* Line numbers if shown */
   .highlight .lineno {
-    color: #6e7681 !important;
-    background: #0d1117 !important;
-    border-right: 1px solid #21262d !important;
-    padding-right: 1em;
+    color: #8b949e !important;
+    background: none !important;
   }
 }

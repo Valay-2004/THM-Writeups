@@ -12,10 +12,10 @@ Welcome to my archive of cybersecurity writeups!
 - [cryptosystem](./EASY/cryptosystem/)
 - [Order](./EASY/Order/)
 - [catpictures](./EASY/catpictures/)
-- [Hidden Deep In My Heart](./EASY/Hidden%20Deep%20Into%20My%20Heart/README.md)
+- [Hidden Deep In My Heart](./EASY/Hidden-Deep-Into-My-Heart/)
 - [Don't click here](http://example.com)
 
 ### MEDIUM
 
 - [Hammer](./MEDIUM/Hammer/)
-- [Unstable Twin](./MEDIUM/Unstable%20Twin/)
+- [Unstable Twin](./MEDIUM/Unstable-Twin/)

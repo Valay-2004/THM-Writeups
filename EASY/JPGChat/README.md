@@ -2,6 +2,28 @@
 
 Exploiting a poorly made custom chatting service written in Python.
 
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/lafb2026e9)  
+**Key Vulnerabilities / Concepts:**
+
+- OSINT (GitHub Source Code Analysis)
+- Command Injection (`os.system`)
+- Python Environment Hijacking (`PYTHONPATH` with `sudo`)
+
+## Table of Contents
+
+- [Enumeration](#enumeration)
+  - [Nmap Scan](#nmap-scan)
+- [OSINT & Source Code Analysis](#osint--source-code-analysis)
+- [Initial Access / Exploitation](#initial-access--exploitation)
+  - [1. Start a Netcat Listener](#1-start-a-netcat-listener)
+  - [2. Connect and Inject Payload](#2-connect-and-inject-payload)
+- [Privilege Escalation](#privilege-escalation)
+  - [Enumeration](#enumeration-1)
+  - [Inspecting the Script](#inspecting-the-script)
+  - [Python Module Hijacking](#python-module-hijacking)
+
+---
+
 ## Enumeration
 
 ### Nmap Scan

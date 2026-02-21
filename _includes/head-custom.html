@@ -1,0 +1,28 @@
+<!-- Custom script for adding Copy button to code blocks -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var codeBlocks = document.querySelectorAll("div.highlight");
+  
+  codeBlocks.forEach(function(codeBlock) {
+    var copyButton = document.createElement("button");
+    copyButton.className = "copy-code-button";
+    copyButton.type = "button";
+    copyButton.ariaLabel = "Copy code to clipboard";
+    copyButton.innerHTML = "Copy";
+
+    codeBlock.appendChild(copyButton);
+
+    copyButton.addEventListener("click", function() {
+      // Find the code element inside the block
+      var code = codeBlock.querySelector("code").innerText.trim();
+      
+      window.navigator.clipboard.writeText(code).then(function() {
+        copyButton.innerHTML = "Copied!";
+        setTimeout(function() {
+          copyButton.innerHTML = "Copy";
+        }, 2000);
+      });
+    });
+  });
+});
+</script>

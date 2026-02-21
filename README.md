@@ -13,6 +13,7 @@ Welcome to my archive of cybersecurity writeups!
 - [Order](./EASY/Order/)
 - [catpictures](./EASY/catpictures/)
 - [Hidden Deep In My Heart](./EASY/Hidden-Deep-Into-My-Heart/)
+- [JPGChat](./EASY/JPGChat/)
 - [Don't click here](http://example.com)
 
 ### MEDIUM

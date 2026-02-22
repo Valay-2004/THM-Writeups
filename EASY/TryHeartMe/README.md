@@ -7,7 +7,7 @@ description: "A detailed guide on exploiting TryHeartMe using JWT tampering and 
 
 Exploiting a Valentine's-themed web application via JWT cookie tampering to gain admin privileges and purchase the hidden "Valenflag".
 
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/tryheartme)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/lafb2026e5/)
 
 **Key Vulnerabilities / Concepts:**
 

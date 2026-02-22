@@ -60,7 +60,8 @@
 
   /* Main code blocks – mimic GitHub dark */
   .highlight,
-  .highlight pre {
+  .highlight pre,
+  pre {
     background: #0d1117 !important; /* or #161b22 for slightly lighter */
     color: #e6edf3 !important;
     border: 1px solid #30363d !important;
@@ -71,8 +72,11 @@
   }
 
   /* Kill per-line backgrounds / odd striping */
-  .highlight pre code {
+  .highlight pre code,
+  pre code {
     background: none !important; /* very important */
+    color: #e6edf3 !important;
+    padding: 0 !important;
   }
 
   .highlight .lineno,
@@ -215,4 +219,89 @@
 
 .copy-code-button:active {
   background-color: #ebecf0;
+}
+
+/* GitHub-style Markdown Alerts */
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: 0.25em solid #d0d7de !important;
+  background: transparent !important;
+}
+.markdown-alert > :first-child {
+  margin-top: 0;
+}
+.markdown-alert > :last-child {
+  margin-bottom: 0 !important;
+}
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.markdown-alert-note {
+  border-left-color: #0969da !important;
+}
+.markdown-alert-note .markdown-alert-title {
+  color: #0969da;
+}
+.markdown-alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.markdown-alert-tip .markdown-alert-title {
+  color: #1a7f37;
+}
+.markdown-alert-important {
+  border-left-color: #8250df !important;
+}
+.markdown-alert-important .markdown-alert-title {
+  color: #8250df;
+}
+.markdown-alert-warning {
+  border-left-color: #bf8700 !important;
+}
+.markdown-alert-warning .markdown-alert-title {
+  color: #bf8700;
+}
+.markdown-alert-caution {
+  border-left-color: #cf222e !important;
+}
+.markdown-alert-caution .markdown-alert-title {
+  color: #cf222e;
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown-alert-note {
+    border-left-color: #2f81f7 !important;
+  }
+  .markdown-alert-note .markdown-alert-title {
+    color: #2f81f7;
+  }
+  .markdown-alert-tip {
+    border-left-color: #3fb950 !important;
+  }
+  .markdown-alert-tip .markdown-alert-title {
+    color: #3fb950;
+  }
+  .markdown-alert-important {
+    border-left-color: #ab7df8 !important;
+  }
+  .markdown-alert-important .markdown-alert-title {
+    color: #ab7df8;
+  }
+  .markdown-alert-warning {
+    border-left-color: #d29922 !important;
+  }
+  .markdown-alert-warning .markdown-alert-title {
+    color: #d29922;
+  }
+  .markdown-alert-caution {
+    border-left-color: #f85149 !important;
+  }
+  .markdown-alert-caution .markdown-alert-title {
+    color: #f85149;
+  }
 }

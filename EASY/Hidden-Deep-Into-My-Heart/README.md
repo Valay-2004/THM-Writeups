@@ -1,3 +1,8 @@
+---
+title: "Hidden Deep Into My Heart - TryHackMe Writeup & Walkthrough"
+description: "Web reconnaissance challenge from Love at First Breach 2026 involving directory enumeration and default credentials."
+---
+
 # Hidden Deep Into My Heart (LAFB2026E9) - TryHackMe
 
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/lafb2026e9)

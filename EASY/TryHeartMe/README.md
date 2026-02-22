@@ -1,3 +1,8 @@
+---
+title: "TryHeartMe - TryHackMe Writeup & Walkthrough"
+description: "A detailed guide on exploiting TryHeartMe using JWT tampering and privilege escalation."
+---
+
 # TryHeartMe - TryHackMe Writeup
 
 Exploiting a Valentine's-themed web application via JWT cookie tampering to gain admin privileges and purchase the hidden "Valenflag".

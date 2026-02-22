@@ -1,3 +1,8 @@
+---
+title: "Cryptosystem - TryHackMe Writeup & Walkthrough"
+description: "Breaking a weak RSA implementation using Fermat's Factorization to decrypt the flag in the Cryptosystem room on TryHackMe."
+---
+
 # TryHackMe: Cryptosystem Writeup
 
 <img src="https://tryhackme.com/img/THMlogo.png" alt="TryHackMe" width="250" style=" display: block;
@@ -43,14 +48,12 @@ The vulnerability lies in the generation of `q` as the next prime after `p`, mak
 The key to solving this challenge is recognizing that `p` and `q` are close primes, which makes RSA vulnerable to Fermat’s Factorization. Here’s the step-by-step process:
 
 1. **Factorize `n` Using Fermat’s Factorization**:
-
    - Since `p` and `q` are close, we can use Fermat’s method, which assumes `n = p * q = (a - b)(a + b) = a^2 - b^2`.
    - Start with `a` as the ceiling of the square root of `n`.
    - Increment `a` until `a^2 - n` is a perfect square, yielding `b^2`. Then, `p = a - b` and `q = a + b`.
    - Verify that `p * q == n`.
 
 2. **Compute the Private Key**:
-
    - Calculate Euler’s totient: `phi = (p-1)*(q-1)`.
    - Compute the private exponent `d` as the modular inverse of `e` modulo `phi`.
 

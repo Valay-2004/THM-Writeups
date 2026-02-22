@@ -1,4 +1,10 @@
+---
+title: "Cat Pictures - TryHackMe Writeup & Walkthrough"
+description: "Exploiting FTP and an internal netcat service for a reverse shell, followed by a Docker escape to gain root access in the Cat Pictures room."
+---
+
 # TryHackMe: Cat Pictures
+
 ## 1. Initial Reconnaissance
 
 First of all we did nmap/rust scan and here are the results

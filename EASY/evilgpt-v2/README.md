@@ -1,3 +1,8 @@
+---
+title: "Evil-GPT v2 - TryHackMe Writeup & Walkthrough"
+description: "Bypassing AI restrictions and extracting the flag using clever prompt injection and social engineering in the Evil-GPT v2 room."
+---
+
 # 📓 TryHackMe Writeup: Evil-GPT v2
 
 > _“Even AI can be manipulated — you just need the right words.”_

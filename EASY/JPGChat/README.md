@@ -1,3 +1,8 @@
+---
+title: "JPGChat - TryHackMe Writeup & Walkthrough"
+description: "Exploiting the JPGChat service via command injection and Python environment hijacking."
+---
+
 # JPGChat - TryHackMe Writeup
 
 Exploiting a poorly made custom chatting service written in Python.

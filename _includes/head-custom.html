@@ -27,3 +27,32 @@
     });
   });
 </script>
+
+<!-- Script for rendering GitHub alerts correctly -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const blockquotes = document.querySelectorAll("blockquote");
+    blockquotes.forEach(bq => {
+      const p = bq.firstElementChild;
+      if (!p || p.tagName !== "P") return;
+
+      const match = p.innerHTML.match(/^\s*\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const title = type.charAt(0).toUpperCase() + type.slice(1);
+
+        bq.classList.add("markdown-alert", "markdown-alert-" + type);
+
+        // Remove the [!TYPE] text and any following <br> or spaces
+        p.innerHTML = p.innerHTML.replace(match[0], "").replace(/^\s*(<br\s*\/?>)?\s*/i, "");
+
+        // Create title element and insert at the top of the blockquote
+        const titleEl = document.createElement("div");
+        titleEl.className = "markdown-alert-title";
+        titleEl.innerHTML = title;
+
+        bq.insertBefore(titleEl, p);
+      }
+    });
+  });
+</script>

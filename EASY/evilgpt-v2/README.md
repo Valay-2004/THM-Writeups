@@ -1,6 +1,7 @@
 ---
 title: "Evil-GPT v2 - TryHackMe Writeup & Walkthrough"
 description: "Bypassing AI restrictions and extracting the flag using clever prompt injection and social engineering in the Evil-GPT v2 room."
+permalink: /EASY/evilgpt-v2/
 ---
 
 # 📓 TryHackMe Writeup: Evil-GPT v2

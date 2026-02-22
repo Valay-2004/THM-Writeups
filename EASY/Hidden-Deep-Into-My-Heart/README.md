@@ -1,6 +1,7 @@
 ---
 title: "Hidden Deep Into My Heart - TryHackMe Writeup & Walkthrough"
 description: "Web reconnaissance challenge from Love at First Breach 2026 involving directory enumeration and default credentials."
+permalink: /EASY/Hidden-Deep-Into-My-Heart/
 ---
 
 # Hidden Deep Into My Heart (LAFB2026E9) - TryHackMe

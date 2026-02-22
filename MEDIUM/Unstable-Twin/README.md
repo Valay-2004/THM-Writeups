@@ -1,6 +1,7 @@
 ---
 title: "Unstable Twin - TryHackMe Writeup & Walkthrough"
 description: "Solving the Unstable Twin room on TryHackMe using SQL injection, cracking hashes, and finding hidden endpoints."
+permalink: /MEDIUM/Unstable-Twin/
 ---
 
 # TryHackMe: Unstable Twin Room Writeup

@@ -1,6 +1,7 @@
 ---
 title: "Cat Pictures - TryHackMe Writeup & Walkthrough"
 description: "Exploiting FTP and an internal netcat service for a reverse shell, followed by a Docker escape to gain root access in the Cat Pictures room."
+permalink: /EASY/catpictures/
 ---
 
 # TryHackMe: Cat Pictures

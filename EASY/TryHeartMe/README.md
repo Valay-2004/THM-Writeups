@@ -1,6 +1,7 @@
 ---
 title: "TryHeartMe - TryHackMe Writeup & Walkthrough"
 description: "A detailed guide on exploiting TryHeartMe using JWT tampering and privilege escalation."
+permalink: /EASY/TryHeartMe/
 ---
 
 # TryHeartMe - TryHackMe Writeup

@@ -1,6 +1,7 @@
 ---
 title: "Cryptosystem - TryHackMe Writeup & Walkthrough"
 description: "Breaking a weak RSA implementation using Fermat's Factorization to decrypt the flag in the Cryptosystem room on TryHackMe."
+permalink: /EASY/cryptosystem/
 ---
 
 # TryHackMe: Cryptosystem Writeup

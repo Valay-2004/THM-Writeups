@@ -1,6 +1,7 @@
 ---
 title: "JPGChat - TryHackMe Writeup & Walkthrough"
 description: "Exploiting the JPGChat service via command injection and Python environment hijacking."
+permalink: /EASY/JPGChat/
 ---
 
 # JPGChat - TryHackMe Writeup

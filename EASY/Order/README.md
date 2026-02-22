@@ -1,6 +1,7 @@
 ---
 title: "Crypto Order - TryHackMe Writeup & Walkthrough"
 description: "Decrypting a repeating-key XOR cipher to extract the target flag in the Crypto Order room on TryHackMe."
+permalink: /EASY/Order/
 ---
 
 <img src="https://tryhackme.com/img/THMlogo.png" alt="TryHackMe" width="250" style=" display: block;

@@ -1,6 +1,7 @@
 ---
 title: "Hammer - TryHackMe Writeup & Walkthrough"
 description: "A comprehensive guide on exploiting the Hammer room on TryHackMe, involving JWT token manipulation and rate limit bypass."
+permalink: /MEDIUM/Hammer/
 ---
 
 # TryHackMe: Hammer Room Writeup

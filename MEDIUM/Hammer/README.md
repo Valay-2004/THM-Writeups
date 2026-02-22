@@ -1,3 +1,8 @@
+---
+title: "Hammer - TryHackMe Writeup & Walkthrough"
+description: "A comprehensive guide on exploiting the Hammer room on TryHackMe, involving JWT token manipulation and rate limit bypass."
+---
+
 # TryHackMe: Hammer Room Writeup
 
 ## Reconnaissance
@@ -15,8 +20,8 @@ nmap -sC -sV -p- <target-ip>
 
 **Open Ports Discovered:**
 
-* **22/tcp**: SSH
-* **1337/tcp**: HTTP web application
+- **22/tcp**: SSH
+- **1337/tcp**: HTTP web application
 
 Focus shifted to the web server on port **1337**.
 
@@ -74,15 +79,15 @@ The app used a **4-digit recovery code** sent on password reset requests. Howeve
 
 ### Observations
 
-* Reset attempts returned a `Rate-Limit-Pending` header counting down from 8.
-* Recovery code was valid for **180 seconds globally**.
+- Reset attempts returned a `Rate-Limit-Pending` header counting down from 8.
+- Recovery code was valid for **180 seconds globally**.
 
 ### Bypass Strategy: Session Rotation
 
 By requesting a new password reset, the app issued a fresh session. So:
 
-* Every **7 attempts**, I requested a **new session**, resetting the rate limit.
-* This allowed **brute-forcing all 10,000 codes** without triggering the lockout.
+- Every **7 attempts**, I requested a **new session**, resetting the rate limit.
+- This allowed **brute-forcing all 10,000 codes** without triggering the lockout.
 
 ### Automation Script
 
@@ -148,10 +153,10 @@ if __name__ == "__main__":
 
 Resetting the password allowed access to a web **dashboard**. This allowed only limited command execution:
 
-* Valid: `ls`
-* Blocked: `whoami`, `cat`, etc.
+- Valid: `ls`
+- Blocked: `whoami`, `cat`, etc.
 
-`ls` Output:  
+`ls` Output:
 
 ![ls](./Images/ls.jpg)
 
@@ -167,8 +172,8 @@ Authentication used **JWT tokens**, stored in cookies.
 
 Key findings:
 
-* Token had a `kid` header pointing to a signing key file.
-* This key was **downloadable**, allowing full JWT re-signing.
+- Token had a `kid` header pointing to a signing key file.
+- This key was **downloadable**, allowing full JWT re-signing.
 
 ### Exploitation Steps:
 
@@ -196,15 +201,15 @@ Key findings:
 
 Using the modified JWT token:
 
-* Accessed admin dashboard
-* Executed full commands:
+- Accessed admin dashboard
+- Executed full commands:
 
 ```bash
 id
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ```
 
-* Retrieved final flags via `cat`, `ls`, etc.
+- Retrieved final flags via `cat`, `ls`, etc.
 
 > Burp Suite was used to insert the forged JWT token in the Authorization Bearer header.
 
@@ -227,11 +232,11 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 
 ## Final Takeaways
 
-* 🔑 Misconfigured JWTs are dangerous when keys are public.
-* 🔁 Session-based rate limits can be bypassed using rotation.
-* 🔍 Log files often leak user data—always enumerate thoroughly.
-* 🔓 Brute-forcing can succeed when carefully scripted and rate-limits are weak.
-* 🧠 Layered vulnerabilities (logs + weak JWT + poor session control) = full pwn.
+- 🔑 Misconfigured JWTs are dangerous when keys are public.
+- 🔁 Session-based rate limits can be bypassed using rotation.
+- 🔍 Log files often leak user data—always enumerate thoroughly.
+- 🔓 Brute-forcing can succeed when carefully scripted and rate-limits are weak.
+- 🧠 Layered vulnerabilities (logs + weak JWT + poor session control) = full pwn.
 
 > **This room showcased chained web vulnerabilities resulting in complete system compromise.**
 

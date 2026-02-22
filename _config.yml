@@ -1,6 +1,12 @@
 title: "Valay's Writeups"
-description: "Writeups from TryHackMe, CTFs and fun"
+description: "Detailed walkthroughs for TryHackMe (THM) rooms, CTFs, and cybersecurity challenges.
+url: "https://valay-2004.github.io/THM-Writeups/" # Replace with your actual GitHub Pages URL
+author: "Valay"
 theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 sass:
   style: :compressed

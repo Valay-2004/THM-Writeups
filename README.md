@@ -12,8 +12,9 @@ Welcome to my archive of cybersecurity writeups!
 - [cryptosystem](./EASY/cryptosystem/)
 - [Order](./EASY/Order/)
 - [catpictures](./EASY/catpictures/)
-- [Hidden Deep In My Heart](./EASY/Hidden-Deep-Into-My-Heart/)
 - [JPGChat](./EASY/JPGChat/)
+- [Hidden Deep In My Heart](./EASY/Hidden-Deep-Into-My-Heart/)
+- [TryHeartMe](./EASY/TryHeartMe/)
 - [Don't click here](http://example.com)
 
 ### MEDIUM

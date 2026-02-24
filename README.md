@@ -15,6 +15,7 @@ Welcome to my archive of cybersecurity writeups!
 - [JPGChat](./EASY/JPGChat/)
 - [Hidden Deep In My Heart](./EASY/Hidden-Deep-Into-My-Heart/)
 - [TryHeartMe](./EASY/TryHeartMe/)
+- [Operation Slither](./EASY/operationslitherIU/)
 - [Don't click here](http://example.com)
 
 ### MEDIUM

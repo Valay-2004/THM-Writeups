@@ -1,6 +1,21 @@
+---
+title: "Epoch - TryHackMe Writeup & Walkthrough"
+description: "Identifying and exploiting a command injection vulnerability in a UNIX timestamp converter web application."
+permalink: /EASY/Epoch/
+---
+
 # Epoch - TryHackMe Writeup
 
 An online tool that helps you convert UNIX dates and timestamps. But wait, it might be doing more than just that!
+
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/epoch)
+[![Web Exploitation](https://img.shields.io/badge/Category-Web%20Exploitation-brightgreen)](#)
+
+**Key Vulnerabilities / Concepts:**
+
+- Command Injection (`bash -c`)
+- Input Validation Bypass
+- Environment Variable Inspection
 
 ## Table of Contents
 
@@ -176,4 +191,8 @@ _=/usr/bin/grep
 
 ## Summary
 
-Happy hacking!
+The **Epoch** challenge from TryHackMe is a straightforward example of why sanitizing user input is critical. By identifying a command injection vulnerability in the timestamp converter, we were able to break out of the intended functionality and gain a reverse shell. The discovery of the flag within environment variables during post-exploitation highlights the importance of checking all potential sources of sensitive information, even when a direct privilege escalation path isn't immediately obvious.
+
+---
+
+Happy Hacking! ❤️ 💻

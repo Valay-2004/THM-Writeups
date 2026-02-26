@@ -6,6 +6,9 @@ permalink: /MEDIUM/Unstable-Twin/
 
 # TryHackMe: Unstable Twin Room Writeup
 
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Medium-orange)](https://tryhackme.com/room/unstabletwin)
+[![SQL Injection](https://img.shields.io/badge/Category-SQL%20Injection-brightgreen)](#)
+
 ### Solving the Twin room with writing up whatever I find and solve :)
 
 > [Room Link](https://tryhackme.com/room/unstabletwin)

@@ -6,6 +6,9 @@ permalink: /MEDIUM/Hammer/
 
 # TryHackMe: Hammer Room Writeup
 
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Medium-orange)](https://tryhackme.com/room/hammer)
+[![Web Exploitation](https://img.shields.io/badge/Category-Web%20Exploitation-brightgreen)](#)
+
 ## Reconnaissance
 
 The first step was scanning the target machine to identify open services.

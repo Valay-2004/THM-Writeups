@@ -16,6 +16,7 @@ Welcome to my archive of cybersecurity writeups!
 - [Hidden Deep In My Heart](./EASY/Hidden-Deep-Into-My-Heart/)
 - [TryHeartMe](./EASY/TryHeartMe/)
 - [Operation Slither](./EASY/operationslitherIU/)
+- [Epoch](./EASY/Epoch/)
 - [Don't click here](http://example.com)
 
 ### MEDIUM

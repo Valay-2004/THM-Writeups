@@ -9,6 +9,7 @@ permalink: /EASY/TryHeartMe/
 Exploiting a Valentine's-themed web application via JWT cookie tampering to gain admin privileges and purchase the hidden "Valenflag".
 
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/lafb2026e5/)
+[![Web Exploitation](https://img.shields.io/badge/Category-Web%20Exploitation-brightgreen)](#)
 
 **Key Vulnerabilities / Concepts:**
 

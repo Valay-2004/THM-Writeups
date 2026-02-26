@@ -8,7 +8,8 @@ permalink: /EASY/JPGChat/
 
 Exploiting a poorly made custom chatting service written in Python.
 
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/lafb2026e9)  
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/lafb2026e9)
+[![Web Exploitation](https://img.shields.io/badge/Category-Web%20Exploitation-brightgreen)](#)
 **Key Vulnerabilities / Concepts:**
 
 - OSINT (GitHub Source Code Analysis)

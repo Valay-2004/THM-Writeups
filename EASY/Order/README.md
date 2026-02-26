@@ -11,6 +11,9 @@ permalink: /EASY/Order/
 
 # TryHackMe Room: Crypto Order
 
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/hfb1order)
+[![Cryptography](https://img.shields.io/badge/Category-Cryptography-brightgreen)](#)
+
 ![Task Screenshot](image.png)
 
 ## Challenge Overview

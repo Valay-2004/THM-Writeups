@@ -8,6 +8,9 @@ permalink: /EASY/evilgpt-v2/
 
 > _“Even AI can be manipulated — you just need the right words.”_
 
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/hfb1evilgptv2)
+[![AI Security](https://img.shields.io/badge/Category-AI%20Security-brightgreen)](#)
+
 ---
 
 ### 🧾 Metadata

@@ -7,6 +7,7 @@ permalink: /EASY/Hidden-Deep-Into-My-Heart/
 # Hidden Deep Into My Heart (LAFB2026E9) - TryHackMe
 
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/lafb2026e9)
+[![Web Exploitation](https://img.shields.io/badge/Category-Web%20Exploitation-brightgreen)](#)
 
 This is a simple web reconnaissance challenge from the `"Love at First Breach 2026"` event on TryHackMe. The goal is to find a hidden flag in an administrative panel by leveraging directory enumeration and information from standard files.
 

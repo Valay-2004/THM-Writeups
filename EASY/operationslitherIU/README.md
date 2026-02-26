@@ -9,7 +9,7 @@ permalink: /EASY/operationslitherIU/
 This room simulates tracking a hacker group (Sneaky Viper) through OSINT techniques, following forum posts to uncover operators' identities and leaked data across platforms.
 
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Easy-blue)](https://tryhackme.com/room/operationslitherIU)
-[![OSINT](https://img.shields.io/badge/Category-OSINT-green)](#)
+[![OSINT](https://img.shields.io/badge/Category-OSINT-brightgreen)](#)
 
 **Key Concepts / Skills:**
 

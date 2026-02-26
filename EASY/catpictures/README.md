@@ -6,6 +6,8 @@ permalink: /EASY/catpictures/
 
 # TryHackMe: Cat Pictures
 
+[![Linux Exploitation](https://img.shields.io/badge/Category-Linux%20Exploitation-brightgreen)](#)
+
 ## 1. Initial Reconnaissance
 
 First of all we did nmap/rust scan and here are the results

@@ -45,6 +45,7 @@ Check out similar content on TryHackMe:
 We're given one PDF in the system named `Repdf.pdf` containing one page with the information below:
 
 ![Front Page](images/front_page_repdf.png)
+
 _(Really sorry for bad quality but it's readable :])_
 
 ---
@@ -73,4 +74,4 @@ The **Confidential** challenge is a nice intro to PDF forensics. It shows that "
 
 ---
 
-Happy Hacking! ❤️ 💻
+Happy Hacking! ❤️💻

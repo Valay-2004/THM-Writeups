@@ -17,6 +17,7 @@ Welcome to my archive of cybersecurity writeups!
 - [TryHeartMe](./EASY/TryHeartMe/)
 - [Operation Slither](./EASY/operationslitherIU/)
 - [Epoch](./EASY/Epoch/)
+- [Confidential](./EASY/confidential/)
 - [Don't click here](http://example.com)
 
 ### MEDIUM
